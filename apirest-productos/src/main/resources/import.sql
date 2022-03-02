@@ -1,0 +1,5 @@
+INSERT INTO productos (codigo, tipo, cantidad, precio, marca, fecha_ingreso, descripcion) VALUES (32190932,'Agua', 3, 3.50, 'Fontvella', '2022-03-01', 'Muy bonita')
+INSERT INTO productos (codigo, tipo, cantidad, precio, marca, fecha_ingreso, descripcion) VALUES (56416648,'Galletas', 5, 3.62, 'Fontaneda', '2022-03-02', 'Riquisimas')
+INSERT INTO productos (codigo, tipo, cantidad, precio, marca, fecha_ingreso, descripcion) VALUES (35169742,'Café', 2, 2.98, 'Nescafe', '2022-03-03', 'Despierta a cualquiera')
+INSERT INTO productos (codigo, tipo, cantidad, precio, marca, fecha_ingreso, descripcion) VALUES (98521463,'Pizza', 7, 2.68, 'Casa Tarradellas', '2022-03-04', 'Delicioso')
+INSERT INTO productos (codigo, tipo, cantidad, precio, marca, fecha_ingreso, descripcion) VALUES (24536984,'Patatas', 1, 5.22, 'Mister Patata', '2022-03-05', 'Redondo')
