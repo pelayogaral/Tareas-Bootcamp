@@ -9,4 +9,5 @@ import com.formacionspringboot.apirest.entity.Usuario;
 public interface UsuarioDAO extends CrudRepository<Usuario, Long>
 {
 	public Usuario findByUser(String user);
+	
 }
