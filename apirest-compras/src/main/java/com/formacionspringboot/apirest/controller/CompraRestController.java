@@ -1,5 +1,6 @@
 package com.formacionspringboot.apirest.controller;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -140,11 +141,11 @@ public class CompraRestController {
 		return new ResponseEntity<Map<String,Object>>(response, HttpStatus.OK);
 	}
 	@PostMapping("/compra/fecha")
-	public ResponseEntity<?> encontrarUsuario(@RequestBody Compra compra) 
+	public ResponseEntity<?> encontrarUsuario(@RequestBody Date compra) 
 	{	
-		Compra compraExiste = servicio.findByFecha(compra.getFecha());
+		Compra compraExiste = servicio.findByFecha(compra);
 		Map<String, Object> response = new HashMap<>();
-		if(compraExiste.getFecha() != null) 
+		if(compraExiste != null) 
 		{
 			response.put("mensaje", "La fecha introducida corresponde con una compra");
 			response.put("compra", compraExiste);

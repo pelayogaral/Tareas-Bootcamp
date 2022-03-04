@@ -211,9 +211,9 @@ public class ArticuloRestController {
 		return new ResponseEntity<Map<String,Object>>(response, HttpStatus.CREATED);
 	}
 	@PostMapping("/articulo/nombre")
-	public ResponseEntity<?> encontrarUsuario(@RequestBody Articulo articulo) 
+	public ResponseEntity<?> encontrarUsuario(@RequestBody String articulo) 
 	{	
-		Articulo articuloExiste = articuloService.findByNombre(articulo.getNombre());
+		Articulo articuloExiste = articuloService.findByNombre(articulo);
 		Map<String, Object> response = new HashMap<>();
 		if(articuloExiste != null) 
 		{

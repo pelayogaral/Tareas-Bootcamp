@@ -150,9 +150,9 @@ public class ClienteRestController {
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
 	@PostMapping("/cliente/nombre")
-	public ResponseEntity<?> encontrarUsuario(@RequestBody Cliente cliente) 
+	public ResponseEntity<?> encontrarUsuario(@RequestBody String cliente) 
 	{	
-		Cliente clienteExiste = clienteService.findByNombre(cliente.getNombre());
+		Cliente clienteExiste = clienteService.findByNombre(cliente);
 		Map<String, Object> response = new HashMap<>();
 		if(clienteExiste != null) 
 		{
