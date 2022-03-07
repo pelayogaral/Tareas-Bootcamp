@@ -22,7 +22,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
             //Son los listados autorizados
             "/api/coches",
             "/api/marcas",
-            "/api/modelos"
+            "/api/modelos",
+            "/api/usuarios"
     };
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
